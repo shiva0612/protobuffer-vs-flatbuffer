@@ -1,0 +1,8 @@
+include "req.fbs";
+include "res.fbs";
+
+namespace models;
+
+rpc_service UserAPI {
+    session_charging(UserRequest):UserResponse;
+  }

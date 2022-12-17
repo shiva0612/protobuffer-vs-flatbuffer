@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package user;
+
+import "user.proto";
+import "google/protobuf/empty.proto";
+
+
+option go_package = "shiva/proto/services/user";
+
+service UserApi {
+    //unary
+    rpc AddUser(user.UserRequest) returns (user.UserResponse);
+
+
+}

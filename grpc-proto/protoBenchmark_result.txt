@@ -1,0 +1,12 @@
+
+go test ./bench/... -run=Benchmark -bench=. -benchtime=2s -count=5 -benchmem
+goos: darwin
+goarch: arm64
+pkg: shiva/bench
+BenchmarkProtoBuffer-8   	   50097	     46096 ns/op	   11784 B/op	     106 allocs/op
+BenchmarkProtoBuffer-8   	   52015	     45915 ns/op	   11782 B/op	     106 allocs/op
+BenchmarkProtoBuffer-8   	   52359	     46037 ns/op	   11784 B/op	     106 allocs/op
+BenchmarkProtoBuffer-8   	   52330	     45803 ns/op	   11786 B/op	     106 allocs/op
+BenchmarkProtoBuffer-8   	   52185	     46172 ns/op	   11783 B/op	     106 allocs/op
+PASS
+ok  	shiva/bench	14.593s

@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "shiva/proto/models/user";
+
+
+message UserRequest {
+  string first_name = 1;
+  string last_name = 2;
+  string middle_name = 3;
+  string user_id = 4;
+  string email = 5;
+  string phone = 6;
+  string dob = 7;
+  string city = 8;
+  string state = 9;
+  string country = 10;
+}
+
+message UserResponse {
+    string first_name = 1;
+    string last_name = 2;
+    string middle_name = 3;
+    string user_id = 4;
+    string email = 5;
+    string phone = 6;
+    string dob = 7;
+    string city = 8;
+    string state = 9;
+    string country = 10;
+  }
+  

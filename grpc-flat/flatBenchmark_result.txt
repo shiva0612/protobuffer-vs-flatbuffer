@@ -1,0 +1,12 @@
+
+go test ./cmd/bench/... -run=Benchmark -bench=. -benchtime=2s -count=5 -benchmem
+goos: darwin
+goarch: arm64
+pkg: shiv/cmd/bench
+BenchmarkFlatBuffer-8   	   56452	     40466 ns/op	    7254 B/op	      99 allocs/op
+BenchmarkFlatBuffer-8   	   59589	     40295 ns/op	    7254 B/op	      99 allocs/op
+BenchmarkFlatBuffer-8   	   59715	     40193 ns/op	    7252 B/op	      99 allocs/op
+BenchmarkFlatBuffer-8   	   60014	     40194 ns/op	    7253 B/op	      99 allocs/op
+BenchmarkFlatBuffer-8   	   60003	     40085 ns/op	    7253 B/op	      99 allocs/op
+PASS
+ok  	shiv/cmd/bench	14.327s
